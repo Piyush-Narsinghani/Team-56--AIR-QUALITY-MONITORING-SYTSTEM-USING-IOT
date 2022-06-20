@@ -1,0 +1,67 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Piyush-Narsinghani 
+Piyush-Narsinghani
+/
+web_Project_2021-
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+web_Project_2021-/package.json
+@Piyush-Narsinghani
+Piyush-Narsinghani Swal
+Latest commit 06ee024 on Nov 13, 2021
+ History
+ 1 contributor
+25 lines (25 sloc)  663 Bytes
+
+{
+  "name": "nodefiles",
+  "version": "12.19.0",
+  "description": "Simple Web App",
+  "main": "hello.js",
+  "scripts": {
+    "test": "(https://github.com/Piyush-Narsinghani/Intro-To-Node.git)",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piyush-Narsinghani/Intro-To-Node.git"
+  },
+  "author": "Piyush Narsinghani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Piyush-Narsinghani/Intro-To-Node/issues"
+  },
+  "homepage": "https://github.com/Piyush-Narsinghani/Intro-To-Node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "sweetalert": "^2.1.2"
+  }
+}
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
