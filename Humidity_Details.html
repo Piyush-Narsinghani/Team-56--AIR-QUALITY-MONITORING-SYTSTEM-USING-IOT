@@ -1682,11 +1682,11 @@ p {
 		if(this.readyState==4 && this.status==200) //if state is=4(response received) and status=200 (no errors)
 		{		
 			var fetched = JSON.parse(xhr.responseText); // parse json file to object 
-            document.getElementById("humidity_value").innerHTML="<p>"+fetched[5].last_value+" %";
+            document.getElementById("humidity_value").innerHTML="<p>"+fetched[6].last_value+" %";
 
          	var status_holder = document.getElementById("status_holder");
          	var status = document.getElementById("current_status");
-         	var humidity = parseFloat(fetched[5].last_value);
+         	var humidity = parseFloat(fetched[6].last_value);
          	if(humidity<=39 && humidity>=0)
          	{
          		status.innerHTML="Dry";

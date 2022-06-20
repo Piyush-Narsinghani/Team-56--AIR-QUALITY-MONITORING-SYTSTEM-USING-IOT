@@ -1682,12 +1682,12 @@ p {
 		if(this.readyState==4 && this.status==200) //if state is=4(response received) and status=200 (no errors)
 		{		
 			var fetched = JSON.parse(xhr.responseText); // parse json file to object 
-            document.getElementById("pressure_value").innerHTML="<p>"+fetched[1].last_value/1000+" PPM";
+            document.getElementById("pressure_value").innerHTML="<p>"+fetched[8].last_value/1000+" PPM";
 
             /* In Millibar */
-            document.getElementById("inPPB").innerHTML = " Methane : "+fetched[1].last_value + " ( PPB )";
+            document.getElementById("inPPB").innerHTML = " Methane : "+fetched[8].last_value + " ( PPB )";
 
-            var airquality = parseFloat(fetched[1].last_value);
+            var airquality = parseFloat(fetched[8].last_value);
             var status_holder = document.getElementById("status_holder");
             var status = document.getElementById("currrent_status");
         

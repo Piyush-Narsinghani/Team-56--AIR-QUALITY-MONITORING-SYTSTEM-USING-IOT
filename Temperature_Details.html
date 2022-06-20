@@ -1682,9 +1682,9 @@ p {
 		if(this.readyState==4 && this.status==200) //if state is=4(response received) and status=200 (no errors)
 		{		
 			var fetched = JSON.parse(xhr.responseText); // parse json file to object 
-            document.getElementById("temperature_value").innerHTML="<p>"+fetched[4].last_value+" °C";
+            document.getElementById("temperature_value").innerHTML="<p>"+fetched[5].last_value+" °C";
             var status_container = document.getElementById("status_holder");
-            var temperature = parseFloat(fetched[4].last_value);
+            var temperature = parseFloat(fetched[5].last_value);
             var status = document.getElementById("currrent_status");
             /*Temperature Statuses */
             if(temperature<=-46)
@@ -1744,9 +1744,9 @@ p {
             	status_container.style.backgroundColor="white";
             }
             /* In Kelvin */
-            document.getElementById("inKelvin").innerHTML = "Temperature : "+parseFloat(parseFloat(fetched[4].last_value)+273.15)+" ( °K )";
+            document.getElementById("inKelvin").innerHTML = "Temperature : "+parseFloat(parseFloat(fetched[5].last_value)+273.15)+" ( °K )";
             /* In Fahrenheit */
-             document.getElementById("inFahrenheit").innerHTML = "Temperature : "+parseFloat(parseFloat(parseFloat(fetched[4].last_value)*9/5)+32) + " ( °F )";
+             document.getElementById("inFahrenheit").innerHTML = "Temperature : "+parseFloat(parseFloat(parseFloat(fetched[5].last_value)*9/5)+32) + " ( °F )";
 
 		}
 	}

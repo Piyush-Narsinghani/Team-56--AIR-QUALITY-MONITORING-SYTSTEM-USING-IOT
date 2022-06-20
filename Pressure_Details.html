@@ -1682,7 +1682,7 @@ p {
 		if(this.readyState==4 && this.status==200) //if state is=4(response received) and status=200 (no errors)
 		{		
 			var fetched = JSON.parse(xhr.responseText); // parse json file to object 
-            document.getElementById("pressure_value").innerHTML="<p>"+fetched[7].last_value+" kPa";
+            document.getElementById("pressure_value").innerHTML="<p>"+fetched[8].last_value+" kPa";
 		}
 	}
 	/***************************** Fetch Request to thingspeak ***************************/
