@@ -9,7 +9,7 @@ http.createServer(function (req, res){
 	var filename = "." + q.pathname;
 	if(filename == './') {filename = './index'};
 
-	filename = filename + ".html";
+	// filename = filename + ".html";
 
 	console.log(filename);
 
